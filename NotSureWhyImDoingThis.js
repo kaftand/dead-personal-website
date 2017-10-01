@@ -1,1 +1,1 @@
-console.log(d3.select("div"))
+d3.select("div").style("Color", "Blue")
