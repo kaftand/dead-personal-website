@@ -1,1 +1,1 @@
-d3.select("div").style("color", "blue")
+d3.selectAll("p").style("color", "blue")
