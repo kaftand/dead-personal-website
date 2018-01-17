@@ -1,0 +1,54 @@
+<script>
+function PlaySound(soundObj) {
+  var sound = document.getElementById(soundObj);
+  sound.play();
+}
+
+function NextSet(sixtyfourdividedby, iSet){
+    if (sixtyfourdividedby > 64)
+    {
+        PlaySound('done')
+        return null;
+    }
+    if (sixtyfourdividedby-1 == iSet)
+    {
+        window.setTimeout(function() {StartPlank(sixtyfourdividedby*2)}, 30*1000)
+        PlaySound('startplank')
+    } else {
+        window.setTimeout(function() {NextSet(sixtyfourdividedby, iSet+1)}, (64*1000)/sixtyfourdividedby)
+        PlaySound('switch');
+    }
+}
+
+function StartPlank(sixtyfourdividedby){
+        var planknumba = document.getElementById('planknumba');
+        planknumba.innerHTML = ('' + sixtyfourdividedby/4 + '/6 planks')
+        window.setTimeout(function() {NextSet(sixtyfourdividedby, 0)}, (64*1000)/sixtyfourdividedby)
+        PlaySound('startsixtyfour');
+}
+
+function start() {
+    PlaySound('startsixtyfour');
+    window.setTimeout(function () {NextSet(2, 0)}, 32*1000)
+}
+</script>
+
+<audio id='done'>
+    <source src="done.wav"/>
+</audio>
+
+<audio id="startplank">
+    <source src="startplank.wav" />
+</audio>
+
+<audio id= "startsixtyfour">
+    <source src="startsixtyfour.wav" />
+</audio>
+
+<audio id = 'switch'>
+    <source src="switch.wav"/>
+</audio>
+
+<button onclick='start()'> start </button>
+
+<div id='planknumba'>0/6 planks</div>
