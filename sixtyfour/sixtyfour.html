@@ -22,7 +22,7 @@ function NextSet(sixtyfourdividedby, iSet){
 
 function StartPlank(sixtyfourdividedby){
         var planknumba = document.getElementById('planknumba');
-        planknumba.innerHTML = ('' + sixtyfourdividedby/4 + '/6 planks')
+        planknumba.innerHTML = ('' + sixtyfourdividedby + ' switches')
         window.setTimeout(function() {NextSet(sixtyfourdividedby, 0)}, (64*1000)/sixtyfourdividedby)
         PlaySound('startsixtyfour');
 }
@@ -51,4 +51,4 @@ function start() {
 
 <button onclick='start()'> start </button>
 
-<div id='planknumba'>0/6 planks</div>
+<div id='planknumba'>2 switches</div>
