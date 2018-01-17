@@ -5,11 +5,6 @@ function PlaySound(soundObj) {
 }
 
 function NextSet(sixtyfourdividedby, iSet){
-    if (sixtyfourdividedby > 64)
-    {
-        PlaySound('done')
-        return null;
-    }
     if (sixtyfourdividedby-1 == iSet)
     {
         window.setTimeout(function() {StartPlank(sixtyfourdividedby*2)}, 30*1000)
@@ -21,10 +16,15 @@ function NextSet(sixtyfourdividedby, iSet){
 }
 
 function StartPlank(sixtyfourdividedby){
+    if (sixtyfourdividedby > 64)
+    {
+        PlaySound('done')
+    }else{
         var planknumba = document.getElementById('planknumba');
         planknumba.innerHTML = ('' + sixtyfourdividedby + ' switches')
         window.setTimeout(function() {NextSet(sixtyfourdividedby, 0)}, (64*1000)/sixtyfourdividedby)
         PlaySound('startsixtyfour');
+    }
 }
 
 function start() {
