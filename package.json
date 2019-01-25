@@ -18,11 +18,22 @@
   },
   "homepage": "https://github.com/kaftand/kaftand.github.io#readme",
   "devDependencies": {
-    "file-loader": "^1.1.5",
+    "file-loader": "^1.1.11",
     "url-loader": "^0.6.2",
-    "webpack": "^3.7.1"
+    "webpack": "^3.12.0"
   },
   "dependencies": {
-    "redux": "^3.7.2"
+    "ajv": "^6.5.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.3.0"
   }
 }

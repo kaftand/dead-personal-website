@@ -6,6 +6,7 @@ import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import allReducers from './reducers';
 import MainAppContainer from './containers/MainAppContainer';
+document.body.style = 'background: #c4baba;';
 
 const store = createStore(
     allReducers,

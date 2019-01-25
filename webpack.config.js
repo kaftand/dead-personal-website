@@ -8,10 +8,10 @@ module.exports = {
 	},
 	module: {
         rules: [
-            		{ 
-                	test: /\.jsx?$/, 
-                	loader: 'babel-loader', 
-               		 exclude: /node_modules/ 
+            		{
+                	test: /\.jsx?$/,
+                	loader: 'babel-loader',
+               		 exclude: /node_modules/
             		},
 			{
                 	test: /\.css$/,
@@ -22,6 +22,5 @@ module.exports = {
 			loader: "url-loader?name=app/images/[name].[ext]"
 			},
         	]
-    	}
+    	},
 };
-

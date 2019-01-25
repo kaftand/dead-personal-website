@@ -8,8 +8,8 @@ import DemoActionReducer from './DemoActionReducer'
  * */
 
 const allReducers = combineReducers({
-    DemoActionReducer:DemoActionReducer,
-    
+    selected:DemoActionReducer,
+
 });
 
 export default allReducers
