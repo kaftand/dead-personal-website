@@ -34383,13 +34383,21 @@ exports.default = _react2.default.createElement(
     null,
     _react2.default.createElement(
         "li",
-        { href: "https://kaftand.github.io/VisualizingKerasActivations/Visualizing+Keras+Activations.html" },
-        "Visualizing Keras Activations (2016) - Python, Keras"
+        null,
+        _react2.default.createElement(
+            "a",
+            { href: "https://kaftand.github.io/VisualizingKerasActivations/Visualizing+Keras+Activations.html" },
+            "Visualizing Keras Activations (2016) - Python, Keras"
+        )
     ),
     _react2.default.createElement(
         "li",
-        { href: "https://kaftand.github.io/opioid-prescription-visualization/" },
-        "ANN glaucoma diagnosis (2016) - Python, Keras"
+        null,
+        _react2.default.createElement(
+            "a",
+            { href: "https://kaftand.github.io/opioid-prescription-visualization/" },
+            "ANN glaucoma diagnosis (2016) - Python, Keras"
+        )
     )
 );
 
@@ -34411,9 +34419,14 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _react2.default.createElement(
-    'div',
+    "div",
     null,
-    'I enjoy working with data and machine learning. This is a page for me to post my side projects for those interested.'
+    "I enjoy working with data and machine learning. This is a page for me to post my side projects for those interested. I am hosting this on an old smartphone I had laying around, using react and node. A good tutorial on getting this to run on a smartphone can be found ",
+    _react2.default.createElement(
+        "a",
+        { href: "https://medium.freecodecamp.org/building-a-node-js-application-on-android-part-1-termux-vim-and-node-js-dfa90c28958f" },
+        "here"
+    )
 );
 
 /***/ })
