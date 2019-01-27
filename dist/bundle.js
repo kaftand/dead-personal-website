@@ -34386,6 +34386,15 @@ exports.default = _react2.default.createElement(
         null,
         _react2.default.createElement(
             "a",
+            { href: "https://kaftand.github.io/GAN-Tutorial/DemoForSeminar.html" },
+            "GAN Tutorial and Visualization (2017) - Python, Keras"
+        )
+    ),
+    _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+            "a",
             { href: "https://kaftand.github.io/VisualizingKerasActivations/Visualizing+Keras+Activations.html" },
             "Visualizing Keras Activations (2016) - Python, Keras"
         )
@@ -34395,7 +34404,7 @@ exports.default = _react2.default.createElement(
         null,
         _react2.default.createElement(
             "a",
-            { href: "https://kaftand.github.io/opioid-prescription-visualization/" },
+            { href: "https://kaftand.github.io/Glaucomania/IDGlaucoma.html" },
             "ANN glaucoma diagnosis (2016) - Python, Keras"
         )
     )
