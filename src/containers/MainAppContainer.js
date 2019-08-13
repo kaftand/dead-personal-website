@@ -17,7 +17,7 @@ class MainAppContainer extends React.Component {
             width:"80%"
         }
         return  <div style={{alignContent:"center"}}>
-                    <div style={{borderStyle:"outset", width:"60%", margin: "auto", backgroundColor:"#f7efef", height:"40%"}}>
+                    <div style={{borderStyle:"outset", width:"60%", margin: "auto", backgroundColor:"#f7efef"}}>
                         <table style={{width:"100%"}}>
                         <tr>
                             <td><TopicLink type="DataViz"/></td>

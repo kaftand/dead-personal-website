@@ -34076,7 +34076,7 @@ var MainAppContainer = function (_React$Component) {
                 { style: { alignContent: "center" } },
                 _react2.default.createElement(
                     'div',
-                    { style: { borderStyle: "outset", width: "60%", margin: "auto", backgroundColor: "#f7efef", height: "40%" } },
+                    { style: { borderStyle: "outset", width: "60%", margin: "auto", backgroundColor: "#f7efef"} },
                     _react2.default.createElement(
                         'table',
                         { style: { width: "100%" } },
