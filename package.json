@@ -24,7 +24,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
-    "ajv": "^6.5.4",
+    "ajv": "^6.12.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
